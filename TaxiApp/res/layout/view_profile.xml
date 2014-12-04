@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ViewProfile.Java
+ -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<RelativeLayout
+    android:id="@+id/cInterestSection"
+    android:layout_width="fill_parent"
+    android:layout_height="488dp" >
+
+    <Button
+        android:id="@+id/logOut"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Log Out"
+        android:onClick ="goToLogout"
+         />
+
+    <TextView
+        android:id="@+id/cFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/logOut"
+        android:layout_marginTop="64dp"
+        android:text="First Name     "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/CProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProfileBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Profile"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/UCFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cFName"
+        android:layout_alignBottom="@+id/cFName"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/cFName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/vLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/UCFName"
+        android:text="Last Name     "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/UCLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/vLName"
+        android:layout_alignBottom="@+id/vLName"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/vLName"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cdob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/UCLName"
+        android:text="Date of Birth     "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/editProfileBTN"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cFName"
+        android:layout_alignLeft="@+id/CProfile"
+        android:text="Edit Profile" />
+
+    <Button
+        android:id="@+id/deleteAcc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CProfile"
+        android:layout_alignParentRight="true"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/cgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cdob"
+        android:text="Gender     "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/chobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cgender"
+        android:text="Hobbies"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/viewInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chobbies"
+        android:layout_marginTop="48dp"
+        android:text="Interests"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewInterest"
+        android:layout_marginTop="85dp"
+        android:layout_toRightOf="@+id/cdob"
+        android:text="User Rating"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ucdob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cdob"
+        android:layout_alignRight="@id/cdob"
+        android:layout_toRightOf="@+id/CProfile"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/cuhobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/chobbies"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/ucinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/viewInterest"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RatingBar
+        android:id="@+id/CUserRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cRating"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/UCGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chobbies"
+        android:layout_toRightOf="@+id/logOut" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cdob"
+        android:text="Rate User"
+        android:onClick="goToRate"
+        
+        />
+
+</RelativeLayout>
+</ScrollView>

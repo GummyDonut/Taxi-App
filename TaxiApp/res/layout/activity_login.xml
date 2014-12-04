@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:visibility="visible"
+    tools:context="com.example.login.LoginActivity" >
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="143dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/regBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/passwrdTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+
+
+    <EditText
+        android:id="@+id/emailTxtField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwrdTextField"
+        android:layout_alignRight="@+id/passwrdTextField"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" >
+    <requestFocus />
+</EditText>
+    <TextView
+        android:id="@+id/failedLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginBtn"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:text=""
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignRight="@+id/loginBtn"
+        android:layout_below="@+id/failedLogin"
+        android:scaleType="fitXY"
+        android:src="@drawable/common_ic_googleplayservices" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taxiapp"
+    android:versionCode="1"
+    android:versionName="1.0"
+     >
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Carpool Controller please change back to main when merging -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+<!-- MAINNNNNNNNS  -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyB9xD_NsOv8bCk6CNexj5ylmi_5IuPzHIU" />
+        <!-- Display message activity -->
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".CarpoolController" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.taxiapp.CarpoolController" />
+        </activity>
+        <activity
+            android:name=".MakeOfferTest"
+            android:label="@string/title_activity_make_offer_test" >
+        </activity>
+        <activity
+            android:name=".EditProfileTest"
+            android:label="@string/title_activity_edit_profile_test" >
+        </activity>
+        <activity
+            android:name=".CarpoolController"
+            android:label="@string/title_activity_edit_profile_test" >
+        </activity>
+
+<!--         Pav's Activities -->
+
+        <activity
+            android:name=".chooseTwoRP"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFUALT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFUALT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CancelPage"
+            android:label="@string/title_activity_cancel_page" >
+        </activity>
+                <activity
+            android:name =".EditProfile"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name ="android.intent.action.VIEW"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+                <activity
+            android:name =".ViewProfile"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name ="android.intent.action.VIEW"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+           <activity
+            android:name =".RatingUser"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name ="android.intent.action.VIEW"/>
+                <category android:name = "android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+                        <activity
+   			 android:name=".route_input"
+    		>
+		</activity>
+		     <activity
+   			 android:name=".route_verification"
+    		>
+		</activity>
+		<activity
+   			 android:name=".MyActivity"
+    		>
+		</activity>
+    </application>
+
+</manifest>

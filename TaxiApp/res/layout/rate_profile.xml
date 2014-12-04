@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/ratingtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="User Rating"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/RuserFname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ratingtitle"
+            android:layout_marginTop="19dp"
+            android:text="User Name:   "
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/AskRatingCUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/RuserFname"
+            android:layout_alignBottom="@+id/RuserFname"
+            android:layout_toRightOf="@+id/RuserFname"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/AskRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AskRatingCUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:text="Rate this user!!"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <RatingBar
+            android:id="@+id/AskingUserRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <Button
+            android:id="@+id/ConfirmRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AskingUserRating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:text="Confirm" />
+
+        <TextView
+            android:id="@+id/displayRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/ConfirmRating"
+            android:layout_below="@+id/ConfirmRating"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+</LinearLayout>

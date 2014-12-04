@@ -1,0 +1,332 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="960dp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:id="@+id/CProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="108dp"
+            android:text="Edit Profile"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="First Name"
+            android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ufname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fname"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="25sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ufname"
+        android:text="Last Name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/ulname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+
+
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ulname"
+        android:text="Gender"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/uinterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/interests"
+        android:ems="10"
+        android:hint="Boating, reading, etc."
+        android:inputType="textMultiLine" />
+
+    <RadioGroup
+        android:id="@+id/gendergroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gender"
+        android:checkedButton="@+id/sound" >
+
+        <RadioButton
+            android:id="@+id/maleg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gender"
+            android:text="Male"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/femaleg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gendergroup"
+        android:text="Hobbies"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/uhobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/hobbies"
+        android:ems="10"
+        android:hint="Boating, reading, etc."
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/uhobbies"
+        android:text="Interests"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ptest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uinterest"
+        android:layout_centerHorizontal="true"
+        android:text="Personality Test"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ptest"
+        android:text="Are you impatient?"
+        android:textSize="25sp" />
+        <RadioGroup
+        android:id="@+id/q1group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/q1"
+        android:checkedButton="@+id/sound" >
+        <RadioButton
+            android:id="@+id/q1yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q1"
+            android:text="Yes"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/q1no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="20sp" />
+
+    </RadioGroup>
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q1group"
+            android:text="Do you often get mood swings?"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/q2group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q2"
+            android:checkedButton="@+id/sound"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/q2yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/q1"
+                android:text="Yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q2no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q2group"
+            android:text="Are you inflexible?"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/q3group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q3"
+            android:checkedButton="@+id/sound"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/q3yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/q1"
+                android:text="Yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q3no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q3group"
+            android:text="Do you defend your principles and ideas?"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/q4group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q4"
+            android:checkedButton="@+id/sound"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/q4yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/q1"
+                android:text="Yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q4no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q4group"
+            android:text="Do you like PI?"
+            android:textSize="25sp" />
+
+        <RadioGroup
+            android:id="@+id/q5group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q5"
+            android:checkedButton="@+id/sound"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/q5yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/q1"
+                android:text="Yes"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/q5no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/editProfileBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/CProfile"
+            android:layout_alignParentBottom="true"
+            android:text="Confirm" />
+
+    </RelativeLayout>
+</ScrollView>
